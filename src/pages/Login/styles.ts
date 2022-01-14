@@ -4,6 +4,8 @@ export const Container = styled.section`
   max-width: 1000px;
   margin: 0 auto;
 
+  padding: 0 1rem;
+
   .row {
     height: 100vh;
     padding: 7.5rem 0 9.1875rem 0;
@@ -12,6 +14,19 @@ export const Container = styled.section`
       display: flex;
       justify-content: flex-end;
     }
+
+    @media (max-width: 768px) {
+      padding-top: 2.5rem;
+      justify-content: center !important;
+    }
+  }
+
+  @media (max-width: 876px) {
+    padding: 0 2rem;
+  }
+
+  @media (max-width: 468px) {
+    padding: 0 1.5rem;
   }
 `;
 
@@ -34,6 +49,43 @@ export const TextContent = styled.div`
     font-size: 1.125rem;
     color: var(--gray-900);
   }
+
+  @media (max-width: 876px) {
+    max-width: 380px !important;
+
+    h1 {
+      font-size: calc(3.375rem - 0.7rem);
+    }
+
+    p {
+      max-width: 350px !important;
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    max-width: auto !important;
+
+    margin-left: -6rem;
+    margin-bottom: 2rem;
+
+    p {
+      display: none;
+    }
+  }
+
+  @media (max-width: 530px) {
+    margin-left: -2rem;
+  }
+
+  @media (max-width: 468px) {
+    margin-left: -10rem;
+    margin-bottom: 1rem;
+
+    h1 {
+      display: none;
+    }
+  }
 `;
 
 export const AuthCard = styled.div`
@@ -44,6 +96,16 @@ export const AuthCard = styled.div`
   border-radius: 6px;
 
   padding: 4rem;
+
+  @media (max-width: 876px) {
+    padding: 3rem;
+
+    height: 24rem;
+  }
+
+  @media (max-width: 468px) {
+    padding: 2rem;
+  }
 `;
 
 export const Form = styled.form`
@@ -169,6 +231,16 @@ export const FormBottomContainer = styled.div`
       :hover {
         filter: brightness(1);
       }
+    }
+  }
+
+  @media (max-width: 468px) {
+    button {
+      font-size: 14px !important;
+    }
+
+    .register {
+      font-size: 12px !important;
     }
   }
 `;

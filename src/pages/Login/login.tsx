@@ -15,7 +15,7 @@ export function Login() {
     <>
       <Container>
         <Row className="row">
-          <Col lg={{ span: 12 }} className="text">
+          <Col lg={{ span: 12 }} md={{ span: 12 }} className="text">
             <TextContent>
               <img
                 src="/images/logo.svg"
@@ -28,7 +28,7 @@ export function Login() {
               </p>
             </TextContent>
           </Col>
-          <Col lg={{ span: 12 }} className="card">
+          <Col lg={{ span: 12 }} md={{ span: 12 }} className="card">
             <AuthCard>
               <Form>
                 <Input
