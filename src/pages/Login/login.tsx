@@ -68,7 +68,7 @@ export function Login() {
                       </svg>
                     }
                   />
-                  <a href="#">Esqueci minha senha</a>
+                  <a href="/">Esqueci minha senha</a>
                 </PassContainer>
 
                 <FormBottomContainer>
@@ -76,7 +76,7 @@ export function Login() {
 
                   <span className="register">
                     Não tem uma conta?
-                    <a href="#">Registar-se</a>
+                    <a href="/">Registar-se</a>
                   </span>
                 </FormBottomContainer>
               </Form>
